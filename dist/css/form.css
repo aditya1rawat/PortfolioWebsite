@@ -115,7 +115,7 @@ form .name,
 form .email {
   display: block;
   float: left;
-  width: 45%;
+  width: 100%;
 }
 form .email {
   float: right;
