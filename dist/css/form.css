@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Raleway:700';
+
+form {
+  box-sizing: border-box;
+  padding: 50px;
+  max-width: 930px;
+  margin: 0 auto;
+}
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  color: #FFF;
+}
+form input,
+form textarea {
+  border-color: #4b4e5b;
+  background-color: #363a4b;
+}
+form .radio, form .checkbox {
+  float: left;
+  position: relative;
+  width: 33.333%;
+  margin-bottom: 30px;
+}
+form .radio input, form .checkbox input {
+  display: none;
+}
+form .radio:hover label:after,
+form .radio:hover label:after, form .checkbox:hover label:after,
+form .checkbox:hover label:after {
+  background-color: #474c63;
+  color: #2e3141;
+}
+form .radio input[type="radio"]:checked + label:after,
+form .radio input[type="checkbox"]:checked + label:after, form .checkbox input[type="radio"]:checked + label:after,
+form .checkbox input[type="checkbox"]:checked + label:after {
+  content: "";
+  background-color: #FFF;
+  color: #2e3141;
+}
+form .radio input[type="checkbox"] + label:after, form .checkbox input[type="checkbox"] + label:after {
+  border-radius: 0.3em;
+}
+form .radio label, form .checkbox label {
+  position: relative;
+  padding-left: 3em;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: 0;
+  box-sizing: border-box;
+}
+form .radio label:after, form .checkbox label:after {
+  content: "";
+  line-height: 1.58125em;
+  display: block;
+  width: 1.65em;
+  height: 1.65em;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: Translate(0, -50%);
+          transform: Translate(0, -50%);
+  border: 2px solid #FFF;
+  text-align: center;
+  background-color: #2e3141;
+  font-size: 3em;
+  font-family: Fontawesome;
+  transition: 0.5s background-color;
+}
+form label {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-family: Raleway, Helvetica, sans-serif;
+}
+form label {
+  font-size: 1.5em;
+}
+form input, form textarea {
+  resize: none;
+  margin: 10px 0 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #999;
+}
+form input[type="submit"],
+form input[type="reset"] {
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  margin: -10px 0 30px;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: Raleway, Helvetica, sans-serif;
+}
+form input[type="submit"] {
+  margin-right: 10px;
+  background-color: cornflowerblue;
+  border-color: cornflowerblue;
+  padding: 10px 40px;
+  color: #FFF;
+}
+form textarea {
+  height: 200px;
+}
+form .name,
+form .email {
+  display: block;
+  float: left;
+  width: 45%;
+}
+form .email {
+  float: right;
+}
+
+.clear:before, .clear:after {
+  display: block;
+  content: "";
+}
+.clear:after {
+  clear: both;
+}
+
+@media screen and (max-width: 725px) {
+  form {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  form .checkbox {
+    width: 100%;
+    float: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  form .name, form .email {
+    float: none;
+    width: 100%;
+  }
+  form .radio {
+    width: 100%;
+    float: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  form input[type="submit"] {
+    margin-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 0;
+  }
+  form input[type="reset"] {
+    border-radius: 0 0 10px 10px;
+  }
+  form input[type="submit"],
+  form input[type="reset"] {
+    padding: 20px 0;
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+}
