@@ -38,7 +38,7 @@ function toggleMenu(){
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Web Developer", "Programmer", "Swimmer", "Tubist"]; //Words that are typed onto animation
+const textArray = ["Web Developer", "Programmer", "Hacker", "Tubist", "Soccer Player", "Swimmer"]; //Words that are typed onto animation
 const typingSpeed = 150;
 const erasingSpeed = 100;
 const newTextDelay = 2000; // Delay between current and next text

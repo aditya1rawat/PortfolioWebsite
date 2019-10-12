@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 
 * {
   margin: 0;
@@ -24,7 +25,15 @@ body {
   text-align: left;
   overflow: hidden;
 }
+
+.container p span.basic{
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.5em;
+}
+
 .container p span.typed-text {
+  font-size: 1.5em;
+  font-family: 'Source Code Pro', monospace;
   font-weight: normal;
   color: #eece1a;
 }
